@@ -18,14 +18,10 @@ def chunk_text(text: str, chunk_size: int = 300, overlap: int = 50) -> list:
 
 
 def embed_chunks(chunks: list) -> np.ndarray:
-    """
-    Uses Gemini embedding API instead of local model.
-    Much lighter — no PyTorch needed.
-    """
     embeddings = []
     for chunk in chunks:
         result = client.models.embed_content(
-            model="gemini-embedding-exp-03-07",
+            model="text-embedding-004",
             contents=chunk
         )
         embeddings.append(result.embeddings[0].values)
@@ -47,10 +43,10 @@ def semantic_search(
     top_k: int = 3
 ) -> list:
     result = client.models.embed_content(
-        model="gemini-embedding-exp-03-07",
-        contents=query
-    )
-    query_embedding = np.array(result.embeddings[0].values)
+    model="text-embedding-004",
+    contents=query
+)
+query_embedding = np.array(result.embeddings[0].values)
     scores = cosine_similarity(query_embedding, chunk_embeddings)
     top_indices = np.argsort(scores)[-top_k:][::-1]
     return [(chunks[i], float(scores[i])) for i in top_indices]
