@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+sentence-transformers
+anthropic
+requests
+beautifulsoup4
+pypdf2
+numpy
+python-multipart
