@@ -102,3 +102,7 @@ async def analyze(
             status_code=500,
             content={"error": str(e), "detail": error_detail}
         )
+@app.get("/models")
+def list_models():
+    models = client.models.list()
+    return [m.name for m in models]
