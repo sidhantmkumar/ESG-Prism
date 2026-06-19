@@ -21,9 +21,9 @@ def embed_chunks(chunks: list) -> np.ndarray:
     embeddings = []
     for chunk in chunks:
         result = client.models.embed_content(
-            model="text-embedding-004",
-            contents=chunk
-        )
+        model="models/gemini-embedding-2",
+        contents=chunk
+    )
         embeddings.append(result.embeddings[0].values)
     return np.array(embeddings)
 
@@ -43,7 +43,7 @@ def semantic_search(
     top_k: int = 3
 ) -> list:
     result = client.models.embed_content(
-        model="text-embedding-004",
+        model="models/gemini-embedding-2",
         contents=query
     )
     query_embedding = np.array(result.embeddings[0].values)

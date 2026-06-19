@@ -106,3 +106,14 @@ async def analyze(
 def list_models():
     models = client.models.list()
     return [m.name for m in models]
+
+@app.get("/test-embed")
+def test_embed():
+    result = client.models.embed_content(
+        model="models/gemini-embedding-2",
+        contents="hello world"
+    )
+
+    return {
+        "embedding_size": len(result.embeddings[0].values)
+    }
