@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+:root {
+  --bg-base: #0B0D10;
+  --bg-surface: #161A20;
+  --bg-surface-raised: #1A1F26;
+  --border-subtle: rgba(255, 255, 255, 0.06);
+  --border-default: rgba(255, 255, 255, 0.1);
+
+  --text-primary: #E8EAED;
+  --text-secondary: #8B92A0;
+  --text-tertiary: #6B7280;
+
+  --accent: #2DD4BF;
+  --accent-dark: #0F6E56;
+
+  --verdict-green: #34D399;
+  --verdict-green-bg: #0F2920;
+  --verdict-amber: #FBBF24;
+  --verdict-amber-bg: #2B2310;
+  --verdict-orange: #FB923C;
+  --verdict-orange-bg: #2B1B0F;
+  --verdict-red: #F87171;
+  --verdict-red-bg: #2B1414;
+
+  --font-display: "Space Grotesk", var(--font-geist-sans), sans-serif;
+  --font-body: "Inter", var(--font-geist-sans), sans-serif;
+  --font-data: "JetBrains Mono", var(--font-geist-mono), monospace;
+}
+
+@theme inline {
+  --color-bg-base: var(--bg-base);
+  --color-bg-surface: var(--bg-surface);
+  --color-bg-surface-raised: var(--bg-surface-raised);
+  --color-border-subtle: var(--border-subtle);
+  --color-border-default: var(--border-default);
+
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-tertiary: var(--text-tertiary);
+
+  --color-accent: var(--accent);
+  --color-accent-dark: var(--accent-dark);
+
+  --color-verdict-green: var(--verdict-green);
+  --color-verdict-green-bg: var(--verdict-green-bg);
+  --color-verdict-amber: var(--verdict-amber);
+  --color-verdict-amber-bg: var(--verdict-amber-bg);
+  --color-verdict-orange: var(--verdict-orange);
+  --color-verdict-orange-bg: var(--verdict-orange-bg);
+  --color-verdict-red: var(--verdict-red);
+  --color-verdict-red-bg: var(--verdict-red-bg);
+
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+  --font-data: var(--font-data);
+}
+
+body {
+  background: var(--bg-base);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+}
