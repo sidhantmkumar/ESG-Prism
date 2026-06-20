@@ -1,9 +1,9 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { Suspense, useEffect, useMemo, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 
-export default function Loading() {
+function LoadingInner() {
   const router = useRouter();
   const searchParams = useSearchParams();
 
@@ -24,38 +24,34 @@ export default function Loading() {
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
-    // Grab the FormData stored by the input page
     const formData = (window as any).__esgFormData;
 
     if (!formData) {
-      // No form data — send back to home
       router.push("/");
       return;
     }
 
-    // Start the API call immediately
-    const apiUrl = process.env.NEXT_PUBLIC_API_URL || "https://esg-prism-backend.onrender.com";
+    const apiUrl =
+      process.env.NEXT_PUBLIC_API_URL ||
+      "https://esg-prism-backend.onrender.com";
 
     fetch(`${apiUrl}/analyze`, {
       method: "POST",
       body: formData,
-      // Do NOT set Content-Type — browser sets it automatically for FormData
     })
       .then((res) => res.json())
       .then((data) => {
-        // Store result for results page
         sessionStorage.setItem("esg_result", JSON.stringify(data));
         router.push("/results");
       })
       .catch((err) => {
-        console.error("API error:", err);
-        // On error, still navigate but results page will show error state
-        sessionStorage.setItem("esg_result", JSON.stringify({ error: err.message }));
+        sessionStorage.setItem(
+          "esg_result",
+          JSON.stringify({ error: err.message })
+        );
         router.push("/results");
       });
 
-    // Animate steps independently of API — just for UX
-    // Use longer duration since real API takes 15-30 seconds
     const totalDuration = 25000;
     const stepDuration = totalDuration / steps.length;
 
@@ -66,7 +62,7 @@ export default function Loading() {
     const progressInterval = setInterval(() => {
       setProgress((prev) => {
         const next = prev + 100 / (totalDuration / 100);
-        return next >= 95 ? 95 : next; // cap at 95% — completes when API returns
+        return next >= 95 ? 95 : next;
       });
     }, 100);
 
@@ -100,7 +96,11 @@ export default function Loading() {
                     : "bg-text-tertiary"
                 }`}
               />
-              <span className={i <= stepIndex ? "text-text-primary" : "text-text-tertiary"}>
+              <span
+                className={
+                  i <= stepIndex ? "text-text-primary" : "text-text-tertiary"
+                }
+              >
                 {step}
               </span>
             </div>
@@ -118,5 +118,19 @@ export default function Loading() {
         </p>
       </div>
     </main>
+  );
+}
+
+export default function Loading() {
+  return (
+    <Suspense
+      fallback={
+        <main className="h-screen flex items-center justify-center">
+          <p className="text-text-secondary font-body">Loading...</p>
+        </main>
+      }
+    >
+      <LoadingInner />
+    </Suspense>
   );
 }
