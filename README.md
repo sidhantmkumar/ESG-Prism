@@ -195,12 +195,8 @@ NEXT_PUBLIC_API_URL=https://esg-prism-backend.onrender.com
 
 # Team
 
-- **Dishita** — AI/Backend (RAG pipeline, FastAPI, deployment)
-- **Sidhant** — Frontend (Next.js, UI, Vercel deployment)
-
-# Built For
-
-**InnovateZ 2026 by Zentiti — Shortlisted in Top 63 of 600+ Teams**
+- **Dishita** 
+- **Sidhant** 
 
 # License
 
