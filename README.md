@@ -15,7 +15,7 @@
 A complete walkthrough demonstrating the ESG analysis workflow, Retrieval-Augmented Generation (RAG), evidence retrieval, AI-based ESG scoring, and PDF report generation.
 
 <p align="center">
-  <a href="https://youtu.be/YOUR_VIDEO_LINK">
+  <a href="https://youtu.be/a0k-ZxLk-1Y">
     <img
       src="assets/demo-thumbnail-esg.png"
       alt="Watch ESG Prism Demo"
