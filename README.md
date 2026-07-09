@@ -10,6 +10,22 @@
 - **GitHub:** https://github.com/dishi575/ESG-Prism
 
 ---
+## 🎥 Product Walkthrough
+
+A complete walkthrough demonstrating the ESG analysis workflow, Retrieval-Augmented Generation (RAG), evidence retrieval, AI-based ESG scoring, and PDF report generation.
+
+<p align="center">
+  <a href="https://youtu.be/YOUR_VIDEO_LINK">
+    <img
+      src="assets/demo-thumbnail-esg.png"
+      alt="Watch ESG Prism Demo"
+      width="550">
+  </a>
+</p>
+
+<p align="center">
+  <sub><b>Click the thumbnail above to watch the full project walkthrough.</b></sub>
+</p>
 
 # What It Does
 
