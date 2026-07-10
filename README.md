@@ -32,7 +32,7 @@ Analyze publicly known companies using <strong>live web intelligence</strong>,
 <img src="https://img.shields.io/badge/Live_Demo-Open_Application-14b8a6?style=for-the-badge">
 </a>
 
-<a href="https://youtu.be/YOUR_VIDEO_LINK">
+<a href="https://youtu.be/a0k-ZxLk-1Y">
 <img src="https://img.shields.io/badge/Watch_Demo-YouTube-red?style=for-the-badge">
 </a>
 
