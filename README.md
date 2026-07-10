@@ -68,58 +68,50 @@ alt="Watch ESG Prism Demo">
 
 # Application Preview
 
-<table>
-<tr>
-<td width="50%">
-
-### Landing Experience
+## Landing Experience
 
 The application accepts a company name, company website, and optional ESG report to initiate an AI-powered due diligence analysis.
 
-<img src="assets/landing.png">
-
-</td>
-
-
-
-### Processing Pipeline
-
-The backend retrieves live evidence, ranks relevant context, constructs RAG prompts, and generates structured ESG insights.
-
-<img src="assets/loading.png">
-
-</td>
-</tr>
-
-<tr>
-<td>
+<p align="center">
+  <img src="assets/landing.png" width="80%">
+</p>
 
 ---
 
-### Results Dashboard
+## Analysis Pipeline
+
+The backend retrieves live evidence, processes the collected information, constructs the Retrieval-Augmented Generation (RAG) context, and performs AI-powered ESG analysis.
+
+<p align="center">
+  <img src="assets/loading.png" width="80%">
+</p>
+
+---
+
+## Results Dashboard
 
 The generated assessment presents ESG scores, risk classification, supporting evidence, explainable AI insights, and source-backed recommendations through an interactive dashboard.
 
 <p align="center">
-<img src="assets/results_1.png" >
+  <img src="assets/results_1.png" width="80%">
 </p>
 
 <p align="center">
-<img src="assets/result_2.png" >
+  <img src="assets/result_2.png" width="80%">
 </p>
 
 <p align="center">
-<img src="assets/results_3.png" >
+  <img src="assets/results_3.png" width="80%">
 </p>
 
 ---
 
-### Exportable Report
+## Exportable Report
 
 Every completed assessment can be exported as a professionally formatted PDF suitable for procurement, investment analysis, compliance reviews, and stakeholder reporting.
 
 <p align="center">
-<img src="assets/result_pdf.png" >
+  <img src="assets/result_pdf.png" width="80%">
 </p>
 ---
 
