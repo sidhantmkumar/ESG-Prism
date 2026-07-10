@@ -116,22 +116,21 @@ Every completed assessment can be exported as a professionally formatted PDF for
 
 ---
 
-# Table of Contents
+## Table of Contents
 
-- Overview
-- Problem Statement
-- Solution
-- Core Capabilities
-- System Architecture
-- AI Analysis Pipeline
-- Technology Stack
-- Repository Structure
-- Installation
-- Environment Variables
-- Roadmap
-- Documentation
-- Authors
-- License
+- [Overview](#overview)
+- [Problem Statement](#problem-statement)
+- [Solution](#solution)
+- [Core Capabilities](#core-capabilities)
+- [System Architecture](#system-architecture)
+- [AI Analysis Pipeline](#ai-analysis-pipeline)
+- [Technology Stack](#technology-stack)
+- [Repository Structure](#repository-structure)
+- [Getting Started](#getting-started)
+- [Roadmap](#roadmap)
+- [Documentation](#documentation)
+- [Author](#author)
+- [License](#license)
 
 ---
 
