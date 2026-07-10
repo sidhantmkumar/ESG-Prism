@@ -362,3 +362,266 @@ Additional technical documentation is available within the `docs/` directory.
 | `security.md` | Authentication, validation, and security practices |
 | `performance.md` | Performance characteristics and optimization strategies |
 | `testing.md` | Testing approach and future automation |
+
+# Getting Started
+
+## Prerequisites
+
+Before running the project locally, ensure the following software is installed:
+
+| Requirement | Version |
+|-------------|---------|
+| Node.js | 18+ |
+| Python | 3.10+ |
+| npm | Latest |
+| Git | Latest |
+
+---
+
+# Installation
+
+## Clone the Repository
+
+```bash
+git clone https://github.com/dishi575/ESG-Prism.git
+
+cd ESG-Prism
+```
+
+---
+
+## Backend Setup
+
+Navigate to the backend directory.
+
+```bash
+cd backend
+```
+
+Create and activate a virtual environment.
+
+```bash
+python -m venv venv
+```
+
+Windows
+
+```bash
+venv\Scripts\activate
+```
+
+Linux / macOS
+
+```bash
+source venv/bin/activate
+```
+
+Install dependencies.
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the backend server.
+
+```bash
+uvicorn main:app --reload
+```
+
+The backend will be available at
+
+```
+http://localhost:8000
+```
+
+Interactive API documentation
+
+```
+http://localhost:8000/docs
+```
+
+---
+
+## Frontend Setup
+
+Navigate to the frontend directory.
+
+```bash
+cd frontend
+```
+
+Install dependencies.
+
+```bash
+npm install
+```
+
+Start the development server.
+
+```bash
+npm run dev
+```
+
+The frontend will be available at
+
+```
+http://localhost:3000
+```
+
+---
+
+# Environment Variables
+
+Create a `.env` file inside the backend directory.
+
+| Variable | Description |
+|----------|-------------|
+| `GOOGLE_API_KEY` | Google Gemini API Key |
+| `SEARCH_API_KEY` | Search service API key |
+| `SEARCH_ENGINE_ID` | Search engine identifier (if applicable) |
+| `ALLOWED_ORIGINS` | Allowed frontend origins |
+| `SECRET_KEY` | Application secret (if used) |
+
+Create a `.env.local` file inside the frontend directory.
+
+| Variable | Description |
+|----------|-------------|
+| `NEXT_PUBLIC_API_URL` | Backend API URL |
+
+> **Note**
+>
+> Never commit environment files or API keys to version control.
+
+---
+
+# Running the Application
+
+Start the backend.
+
+```bash
+uvicorn main:app --reload
+```
+
+Start the frontend.
+
+```bash
+npm run dev
+```
+
+Open
+
+```
+http://localhost:3000
+```
+
+Enter:
+
+- Company Name
+- Company Website
+- ESG Report (Optional)
+
+and initiate the analysis.
+
+---
+
+# Roadmap
+
+## Completed
+
+- Live company analysis
+- Retrieval-Augmented Generation pipeline
+- Semantic evidence retrieval
+- AI-powered ESG scoring
+- Explainable assessments
+- Interactive dashboard
+- PDF report generation
+- REST API
+- Responsive frontend
+
+---
+
+## In Progress
+
+- Improved retrieval accuracy
+- Enhanced evidence ranking
+- Expanded ESG scoring methodology
+
+---
+
+## Planned
+
+- Multi-company comparison
+- Historical ESG trend analysis
+- User authentication
+- Saved analysis history
+- Background processing
+- Batch company analysis
+- Dashboard analytics
+- Advanced report customization
+
+---
+
+# Documentation
+
+Detailed technical documentation is available in the `docs/` directory.
+
+| Document | Purpose |
+|----------|---------|
+| `architecture.md` | System architecture and request lifecycle |
+| `rag.md` | Retrieval-Augmented Generation pipeline |
+| `api.md` | REST API reference |
+| `engineering-decisions.md` | Design rationale and architectural choices |
+| `deployment.md` | Deployment architecture |
+| `security.md` | Security model |
+| `performance.md` | Performance considerations |
+| `testing.md` | Testing strategy |
+
+---
+
+# Contributing
+
+Contributions are welcome.
+
+1. Fork the repository.
+2. Create a feature branch.
+3. Commit your changes.
+4. Push the branch.
+5. Open a Pull Request.
+
+Please ensure that new contributions follow the existing project structure and coding conventions.
+
+---
+
+# Author
+
+**Dishita Chaturvedi**
+
+Computer Science Engineering Student
+
+GitHub
+
+```
+https://github.com/dishi575
+```
+
+LinkedIn
+
+```
+https://linkedin.com/in/YOUR_PROFILE
+```
+
+---
+
+# License
+
+This project is licensed under the **MIT License**.
+
+See the `LICENSE` file for additional information.
+
+---
+
+<p align="center">
+
+Developed with a focus on practical AI engineering, explainable machine learning, and scalable software architecture.
+
+</p>
