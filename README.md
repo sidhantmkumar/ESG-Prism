@@ -34,7 +34,7 @@ Analyze publicly known companies using **live web intelligence, Retrieval-Augmen
 A complete walkthrough demonstrating the ESG analysis workflow, Retrieval-Augmented Generation (RAG), evidence retrieval, AI-assisted scoring, and PDF report generation.
 
 <p align="center">
-<a href="https://youtu.be/YOUR_VIDEO_LINK">
+<a href="https://youtu.be/a0k-ZxLk-1Y?si=ZzhGWXzT5RCQxEaE">
 <img src="assets/demo-thumbnail.png"
 width="550"
 alt="Watch ESG Prism Demo">
