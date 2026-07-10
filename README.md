@@ -35,7 +35,7 @@ A complete walkthrough demonstrating the ESG analysis workflow, Retrieval-Augmen
 
 <p align="center">
 <a href="https://youtu.be/a0k-ZxLk-1Y?si=ZzhGWXzT5RCQxEaE">
-<img src="assets/demo-thumbnail.png"
+<img src="assets/demo-thumbnail-esg.png"
 width="550"
 alt="Watch ESG Prism Demo">
 </a>
