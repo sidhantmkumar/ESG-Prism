@@ -76,7 +76,7 @@ alt="Watch ESG Prism Demo">
 
 The application accepts a company name, company website, and optional ESG report to initiate an AI-powered due diligence analysis.
 
-<img src="assets/landing-page.png">
+<img src="assets/landing.png">
 
 </td>
 
@@ -94,26 +94,33 @@ The backend retrieves live evidence, ranks relevant context, constructs RAG prom
 <tr>
 <td>
 
-### ESG Assessment
+---
 
-Structured ESG scores are generated with supporting evidence, confidence indicators, risk categorization, and explainable reasoning.
+### Results Dashboard
 
-<img src="assets/results.png">
+The generated assessment presents ESG scores, risk classification, supporting evidence, explainable AI insights, and source-backed recommendations through an interactive dashboard.
 
-</td>
+<p align="center">
+<img src="assets/results_1.png" width="900">
+</p>
 
-<td>
+<p align="center">
+<img src="assets/result_2.png" width="900">
+</p>
 
-### Exportable Reports
+<p align="center">
+<img src="assets/results_3.png" width="900">
+</p>
 
-Every completed assessment can be exported as a professionally formatted PDF for compliance, auditing, and stakeholder review.
+---
 
-<img src="assets/pdf-report.png">
+### Exportable Report
 
-</td>
-</tr>
-</table>
+Every completed assessment can be exported as a professionally formatted PDF suitable for procurement, investment analysis, compliance reviews, and stakeholder reporting.
 
+<p align="center">
+<img src="assets/result_pdf.png" width="900">
+</p>
 ---
 
 ## Table of Contents
