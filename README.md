@@ -80,7 +80,7 @@ The application accepts a company name, company website, and optional ESG report
 
 </td>
 
-<td width="50%">
+
 
 ### Processing Pipeline
 
@@ -101,15 +101,15 @@ The backend retrieves live evidence, ranks relevant context, constructs RAG prom
 The generated assessment presents ESG scores, risk classification, supporting evidence, explainable AI insights, and source-backed recommendations through an interactive dashboard.
 
 <p align="center">
-<img src="assets/results_1.png" width="900">
+<img src="assets/results_1.png" >
 </p>
 
 <p align="center">
-<img src="assets/result_2.png" width="900">
+<img src="assets/result_2.png" >
 </p>
 
 <p align="center">
-<img src="assets/results_3.png" width="900">
+<img src="assets/results_3.png" >
 </p>
 
 ---
@@ -119,7 +119,7 @@ The generated assessment presents ESG scores, risk classification, supporting ev
 Every completed assessment can be exported as a professionally formatted PDF suitable for procurement, investment analysis, compliance reviews, and stakeholder reporting.
 
 <p align="center">
-<img src="assets/result_pdf.png" width="900">
+<img src="assets/result_pdf.png" >
 </p>
 ---
 
