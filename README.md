@@ -20,7 +20,7 @@ Analyze publicly known companies using <strong>live web intelligence</strong>,
 <img src="https://img.shields.io/badge/Next.js-15-black?logo=next.js" />
 <img src="https://img.shields.io/badge/FastAPI-009688?logo=fastapi" />
 <img src="https://img.shields.io/badge/Google-Gemini-blue" />
-<img src="https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql" />
+<img src="https://img.shields.io/badge/Python-3776AB?logo=python" />
 <img src="https://img.shields.io/badge/RAG-Retrieval--Augmented-success" />
 <img src="https://img.shields.io/badge/License-MIT-green" />
 
