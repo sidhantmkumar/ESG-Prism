@@ -162,3 +162,203 @@ ESG Prism automates the complete due diligence workflow by combining live web in
 For every analysis request, the platform retrieves relevant public information, ranks evidence using semantic similarity, enriches prompts with contextual knowledge, and generates structured ESG assessments using Google's Gemini models.
 
 Every report is supported by retrieved evidence, enabling transparent, explainable, and repeatable ESG evaluations suitable for procurement, investment, and compliance workflows.
+
+# Core Capabilities
+
+<table>
+<tr>
+<td width="50%">
+
+### Live Web Intelligence
+
+Retrieves current information about target organizations from publicly available sources to ensure assessments are based on recent and relevant evidence rather than static reports.
+
+</td>
+
+<td width="50%">
+
+### Retrieval-Augmented Generation
+
+Constructs evidence-grounded prompts by combining semantic retrieval with Google's Gemini models, improving factual consistency and explainability.
+
+</td>
+</tr>
+
+<tr>
+<td>
+
+### Structured ESG Assessment
+
+Generates standardized Environmental, Social, and Governance evaluations with individual scores, overall risk ratings, and supporting justifications.
+
+</td>
+
+<td>
+
+### Semantic Evidence Retrieval
+
+Ranks retrieved content using embedding-based similarity to identify the most relevant information before inference.
+
+</td>
+</tr>
+
+<tr>
+<td>
+
+### Explainable AI
+
+Every assessment is accompanied by supporting evidence, source references, and reasoning to improve transparency and auditability.
+
+</td>
+
+<td>
+
+### Professional Report Generation
+
+Produces structured PDF reports suitable for procurement, investment analysis, compliance reviews, and stakeholder communication.
+
+</td>
+</tr>
+</table>
+
+---
+
+# System Architecture
+
+The platform follows a modular architecture where the frontend, backend, retrieval pipeline, and AI services operate as independent components.
+
+```mermaid
+graph TD
+
+A["User"]
+
+--> B["Next.js Frontend"]
+
+B --> C["FastAPI Backend"]
+
+C --> D["Search & Data Retrieval"]
+
+D --> E["RAG Pipeline"]
+
+E --> F["Google Gemini"]
+
+F --> G["Structured ESG Report"]
+
+G --> H["Frontend Dashboard"]
+
+G --> I["PDF Report"]
+```
+
+---
+
+# AI Analysis Pipeline
+
+Each analysis request passes through multiple stages before a final ESG assessment is generated.
+
+```mermaid
+flowchart TD
+
+A["Company Information"]
+
+--> B["Input Validation"]
+
+B --> C["Live Evidence Retrieval"]
+
+C --> D["Document Processing"]
+
+D --> E["Embedding Generation"]
+
+E --> F["Semantic Retrieval"]
+
+F --> G["Context Construction"]
+
+G --> H["Gemini Inference"]
+
+H --> I["Structured ESG Assessment"]
+
+I --> J["Interactive Dashboard"]
+
+I --> K["PDF Export"]
+```
+
+---
+
+# Technology Stack
+
+| Layer | Technologies |
+|--------|--------------|
+| Frontend | Next.js, React, TypeScript, Tailwind CSS |
+| Backend | FastAPI, Python |
+| AI | Google Gemini, Retrieval-Augmented Generation (RAG), Semantic Embeddings |
+| Search | Live Web Search, Context Retrieval |
+| Report Generation | PDF Generation |
+| Deployment | Vercel, Render |
+| Documentation | Swagger / OpenAPI |
+
+---
+
+# Repository Structure
+
+```text
+ESG-Prism/
+
+├── backend/
+│   ├── api/
+│   ├── services/
+│   ├── rag/
+│   ├── prompts/
+│   ├── models/
+│   ├── utils/
+│   └── main.py
+│
+├── frontend/
+│   ├── app/
+│   ├── components/
+│   ├── hooks/
+│   ├── lib/
+│   └── public/
+│
+├── assets/
+│
+├── docs/
+│   ├── architecture.md
+│   ├── rag.md
+│   ├── api.md
+│   ├── engineering-decisions.md
+│   ├── deployment.md
+│   ├── security.md
+│   ├── performance.md
+│   └── testing.md
+│
+├── README.md
+└── LICENSE
+```
+
+---
+
+# Design Principles
+
+The architecture is built around a small set of engineering principles:
+
+- **Modularity** — Independent frontend, backend, and AI components simplify maintenance and future expansion.
+- **Explainability** — ESG assessments are grounded in retrieved evidence rather than generated solely from model knowledge.
+- **Separation of Concerns** — User interface, business logic, retrieval, and inference remain isolated within dedicated modules.
+- **Scalability** — Individual services can evolve or be replaced without affecting the overall workflow.
+- **Extensibility** — Additional retrieval strategies, AI models, or ESG frameworks can be integrated with minimal architectural changes.
+
+---
+
+# Documentation
+
+Additional technical documentation is available within the `docs/` directory.
+
+| Document | Description |
+|----------|-------------|
+| `architecture.md` | Overall system architecture and request lifecycle |
+| `rag.md` | Retrieval-Augmented Generation pipeline |
+| `api.md` | REST API documentation |
+| `engineering-decisions.md` | Key architectural and implementation decisions |
+| `deployment.md` | Deployment architecture and infrastructure |
+| `security.md` | Authentication, validation, and security practices |
+| `performance.md` | Performance characteristics and optimization strategies |
+| `testing.md` | Testing approach and future automation |
