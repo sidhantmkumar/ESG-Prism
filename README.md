@@ -1,91 +1,118 @@
 <p align="center">
-
-# ESG Prism
-
-### Enterprise AI Platform for Automated ESG Due Diligence
-
-Analyze publicly known companies using **live web intelligence, Retrieval-Augmented Generation (RAG), semantic search, and large language models** to generate explainable Environmental, Social, and Governance (ESG) assessments in under 30 seconds.
-
-[🎥 Watch Demo](https://youtu.be/YOUR_VIDEO)
-
-•
-[🌐 Live Demo](https://esg-prism-tqqn.vercel.app)
-
-•
-[📚 Documentation](docs/architecture.md)
-
-•
-[⚙ API](https://esg-prism-backend.onrender.com/docs)
-
+  <img src="assets/banner.png" alt="ESG Prism Banner" width="100%">
 </p>
 
----
+<h1 align="center">ESG Prism</h1>
+
+<p align="center">
+  <strong>Enterprise AI Platform for Automated ESG Due Diligence</strong>
+</p>
+
+<p align="center">
+Analyze publicly known companies using <strong>live web intelligence</strong>,
+<strong>Retrieval-Augmented Generation (RAG)</strong>,
+<strong>semantic search</strong>, and
+<strong>Google Gemini</strong> to generate explainable ESG risk assessments in under 30 seconds.
+</p>
 
 <p align="center">
 
-<img src="assets/banner.png" width="100%">
+<img src="https://img.shields.io/badge/Next.js-15-black?logo=next.js" />
+<img src="https://img.shields.io/badge/FastAPI-009688?logo=fastapi" />
+<img src="https://img.shields.io/badge/Google-Gemini-blue" />
+<img src="https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql" />
+<img src="https://img.shields.io/badge/RAG-Retrieval--Augmented-success" />
+<img src="https://img.shields.io/badge/License-MIT-green" />
+
+</p>
+
+<p align="center">
+
+<a href="https://esg-prism-tqqn.vercel.app">
+<img src="https://img.shields.io/badge/Live_Demo-Open_Application-14b8a6?style=for-the-badge">
+</a>
+
+<a href="https://youtu.be/YOUR_VIDEO_LINK">
+<img src="https://img.shields.io/badge/Watch_Demo-YouTube-red?style=for-the-badge">
+</a>
+
+<a href="https://esg-prism-backend.onrender.com/docs">
+<img src="https://img.shields.io/badge/API-Swagger-blue?style=for-the-badge">
+</a>
+
+<a href="docs/architecture.md">
+<img src="https://img.shields.io/badge/Technical_Docs-Read-black?style=for-the-badge">
+</a>
 
 </p>
 
 ---
 
-## 🎥 Product Walkthrough
+# Product Walkthrough
 
-A complete walkthrough demonstrating the ESG analysis workflow, Retrieval-Augmented Generation (RAG), evidence retrieval, AI-assisted scoring, and PDF report generation.
+A complete walkthrough covering the end-to-end ESG due diligence workflow, including live evidence retrieval, Retrieval-Augmented Generation (RAG), AI-powered ESG scoring, structured report generation, and PDF export.
 
 <p align="center">
 <a href="https://youtu.be/a0k-ZxLk-1Y?si=ZzhGWXzT5RCQxEaE">
 <img src="assets/demo-thumbnail-esg.png"
-width="550"
+width="560"
 alt="Watch ESG Prism Demo">
 </a>
 </p>
 
 <p align="center">
-<sub><b>Click the thumbnail above to watch the complete project walkthrough.</b></sub>
+<b>Click the thumbnail above to watch the complete project walkthrough.</b>
 </p>
 
 ---
 
-## Screenshots
+# Application Preview
 
-### Landing Page
+<table>
+<tr>
+<td width="50%">
 
-The application accepts a company name, website, and ESG report to initiate an automated due diligence analysis.
+### Landing Experience
 
-<p align="center">
-<img src="assets/landing-page.png" width="900">
-</p>
+The application accepts a company name, company website, and optional ESG report to initiate an AI-powered due diligence analysis.
 
----
+<img src="assets/landing-page.png">
 
-### Analysis Pipeline
+</td>
 
-During execution, the backend performs live evidence retrieval, semantic ranking, RAG context construction, and structured LLM inference.
+<td width="50%">
 
-<p align="center">
-<img src="assets/loading.png" width="900">
-</p>
+### Processing Pipeline
 
----
+The backend retrieves live evidence, ranks relevant context, constructs RAG prompts, and generates structured ESG insights.
+
+<img src="assets/loading.png">
+
+</td>
+</tr>
+
+<tr>
+<td>
 
 ### ESG Assessment
 
-The generated report includes ESG scores, supporting evidence, risk categorization, citations, and AI-generated explanations.
+Structured ESG scores are generated with supporting evidence, confidence indicators, risk categorization, and explainable reasoning.
 
-<p align="center">
-<img src="assets/results.png" width="900">
-</p>
+<img src="assets/results.png">
 
----
+</td>
 
-### Exportable Report
+<td>
 
-Completed analyses can be exported as professionally formatted PDF reports for auditing and compliance purposes.
+### Exportable Reports
 
-<p align="center">
-<img src="assets/pdf-report.png" width="900">
-</p>
+Every completed assessment can be exported as a professionally formatted PDF for compliance, auditing, and stakeholder review.
+
+<img src="assets/pdf-report.png">
+
+</td>
+</tr>
+</table>
 
 ---
 
@@ -96,7 +123,7 @@ Completed analyses can be exported as professionally formatted PDF reports for a
 - Solution
 - Core Capabilities
 - System Architecture
-- AI Pipeline
+- AI Analysis Pipeline
 - Technology Stack
 - Repository Structure
 - Installation
@@ -110,28 +137,28 @@ Completed analyses can be exported as professionally formatted PDF reports for a
 
 # Overview
 
-ESG Prism is a full-stack AI platform that automates Environmental, Social, and Governance (ESG) due diligence by combining live web intelligence with Retrieval-Augmented Generation.
+ESG Prism is a full-stack AI platform that automates Environmental, Social, and Governance (ESG) due diligence using Retrieval-Augmented Generation (RAG), semantic search, and large language models.
 
-Instead of relying solely on static sustainability reports or manual research, the platform aggregates information from multiple public sources, retrieves the most relevant evidence through semantic search, and generates structured ESG assessments using Google's Gemini models.
+Instead of relying solely on manual research or static sustainability reports, the platform gathers publicly available information, retrieves the most relevant evidence through semantic similarity, and generates structured ESG assessments grounded in verifiable context.
 
-The system is intended to support analysts, procurement teams, investors, and organizations that require rapid, explainable ESG evaluations before engaging with external companies.
+Designed for procurement teams, analysts, investors, and compliance professionals, ESG Prism delivers explainable ESG evaluations in seconds while maintaining transparency through evidence-backed reasoning.
 
 ---
 
 # Problem Statement
 
-Traditional ESG due diligence is a manual and time-intensive process that requires analysts to review sustainability reports, annual filings, regulatory disclosures, and news articles across multiple sources.
+Conducting ESG due diligence requires reviewing sustainability reports, annual filings, regulatory disclosures, and news coverage across numerous sources.
 
-This process often results in inconsistent evaluations, limited transparency, and significant effort when assessing multiple organizations.
+This manual process is often time-consuming, inconsistent, and difficult to scale when evaluating multiple organizations.
 
-For small teams and procurement workflows, conducting comprehensive ESG reviews can become operationally expensive and difficult to scale.
+Additionally, conventional AI systems frequently generate generic summaries without grounding their responses in factual evidence, limiting trust and explainability.
 
 ---
 
 # Solution
 
-ESG Prism automates the complete due diligence workflow.
+ESG Prism automates the complete due diligence workflow by combining live web intelligence with Retrieval-Augmented Generation.
 
-For every analysis request, the platform gathers publicly available information, retrieves the most relevant evidence using semantic search, enriches the prompt through Retrieval-Augmented Generation, and generates structured ESG assessments with supporting justifications.
+For every analysis request, the platform retrieves relevant public information, ranks evidence using semantic similarity, enriches prompts with contextual knowledge, and generates structured ESG assessments using Google's Gemini models.
 
-Rather than producing generic AI responses, the platform grounds every evaluation in retrieved context, improving both transparency and factual consistency.
+Every report is supported by retrieved evidence, enabling transparent, explainable, and repeatable ESG evaluations suitable for procurement, investment, and compliance workflows.
