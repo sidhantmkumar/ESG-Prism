@@ -594,20 +594,20 @@ Please ensure that new contributions follow the existing project structure and c
 
 # Author
 
-**Dishita Chaturvedi**
+**Sidhant Kumar**
 
 Computer Science Engineering Student
 
 GitHub
 
 ```
-https://github.com/dishi575
+https://github.com/sidhantmkumar
 ```
 
 LinkedIn
 
 ```
-https://linkedin.com/in/YOUR_PROFILE
+https://www.linkedin.com/in/sidhant-k-1315ba289/
 ```
 
 ---
